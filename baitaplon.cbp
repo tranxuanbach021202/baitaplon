@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="baitaplon" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/baitaplon" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/mingw_dev/include/SDL2" />
+					<Add directory="D:/SDL_image/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="D:/sdl_tff/include/SDL2" />
+					<Add directory="D:/sdl_mixer/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add option="-lSDL2_mixer" />
+					<Add directory="D:/mingw_dev/lib" />
+					<Add directory="D:/SDL_image/x86_64-w64-mingw32/lib" />
+					<Add directory="D:/sdl_tff/lib" />
+					<Add directory="D:/sdl_mixer/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/baitaplon" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Bullet_Enemy.cpp" />
+		<Unit filename="Bullet_Enemy.h" />
+		<Unit filename="Bullet_Planes.cpp" />
+		<Unit filename="Bullet_Planes.h" />
+		<Unit filename="CheckCollision.cpp" />
+		<Unit filename="CheckCollision.h" />
+		<Unit filename="Commonfunction.cpp" />
+		<Unit filename="Commonfunction.h" />
+		<Unit filename="Load_Button.cpp" />
+		<Unit filename="Load_Button.h" />
+		<Unit filename="Load_Texture.cpp" />
+		<Unit filename="Load_Texture.h" />
+		<Unit filename="Planes.cpp" />
+		<Unit filename="Planes.h" />
+		<Unit filename="Planes_Enemy.cpp" />
+		<Unit filename="Planes_Enemy.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
